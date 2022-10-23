@@ -82,7 +82,7 @@ function runCheck(params: { node: TSESTree.CallExpression; context: RuleContext 
     queryFn === undefined ||
     queryFn.value.type !== AST_NODE_TYPES.ArrowFunctionExpression
   ) {
-    return;
+    return; 
   }
 
   if (queryKey.value.type !== AST_NODE_TYPES.ArrayExpression) {
