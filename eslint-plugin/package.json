@@ -1,15 +1,26 @@
 {
   "name": "eslint-plugin-react-query",
   "version": "1.0.0",
-  "description": "",
+  "description": "ESLint plugin for React Query",
+  "keywords": [
+    "react-query",
+    "eslint",
+    "plugin"
+  ],
+  "author": "Eliya Cohen",
+  "license": "MIT",
   "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch"
+    "typecheck": "tsc",
+    "build": "tsup --minify",
+    "dev": "tsup --watch --dts --sourcemap",
+    "test": "vitest src/**/*.test.ts",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src",
+    "publish": "pnpm build && pnpm publish"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.40.1",
     "@typescript-eslint/parser": "^5.40.1",
@@ -17,6 +28,8 @@
     "@typescript-eslint/utils": "^5.40.1",
     "eslint": "^8.26.0",
     "tsup": "^6.3.0",
-    "typescript": "4.8.4"
+    "typescript": "4.8.4",
+    "vite": "^3.1.8",
+    "vitest": "^0.24.3"
   }
 }
