@@ -1,3 +1,6 @@
+# Update - [This plugin has been ported to the official @tanstack/query repository](https://github.com/TanStack/query/pull/4364)
+
+
 # react-query-eslint-plugin
 This is an experimental ESLint plugin for [@tanstack/query](https://tanstack.com/query/v4) (React).
 
